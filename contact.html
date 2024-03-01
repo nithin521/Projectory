@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eClinic | Contact Us</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(bgemail.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(12px);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 1em 0;
+    }
+
+    p {
+        margin: 0 0 1em;
+        line-height: 1.5;
+    }
+
+    .contact-us {
+        padding: 50px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .form-group textarea {
+        height: 150px;
+    }
+
+    .contact-us button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .contact-us button:hover {
+        background-color: #0067cc;
+    }
+
+    .contact-info {
+        margin-top: 40px;
+    }
+
+    .contact-info h2 {
+        margin-bottom: 10px;
+    }
+    .button{
+        padding: 10px 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border: 0;
+        margin: 30px 0px 0px 20px;
+        border-radius: 8px;
+    }
+    .button:hover{
+        cursor: pointer;
+         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        background-color: #b6b6b6;
+    }
+    </style>
+</head>
+<body>
+
+    <main>
+        <button class="button" onclick="history.back();">Back</button>
+        <section class="contact-us">
+            <h1>Contact Us</h1>
+            <p>
+                We're here to help! Whether you have a question, a suggestion, or just want to say hello, feel free to reach out to us using the form below.
+            </p>
+            <form action="mailto:nithishi20030710@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li>
+                        <span>Support: +91 9999999999</span>
+                    </li>
+                    <li>
+                        <span>Email: support@eclinic.co.in</span>
+                    </li>
+                    <li>
+                        <span>Address: eClinic, Evolution House, Caxton Road</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

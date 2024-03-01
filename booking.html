@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        background: radial-gradient(circle closest-side at center, #f4f4f4, #f0f0f0 70%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .form-container {
+      width: 500px;
+      margin: 50px auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .hero {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff; 
+  margin-bottom: 50px;
+}
+section{
+  flex: 0.4;
+  height: 87vh;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+  flex-direction: column;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section h2{
+  color: #4CAF50;
+}
+ .back-button{
+        padding: 10px 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border: 0;
+        margin: 30px 0px 0px 20px;
+        border-radius: 8px;
+        background-color: #aba9a9;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+    }
+    .back-button:hover{
+        cursor: pointer;
+        /* border: 0.5px solid black; */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        background-color: #b6b6b6;
+        color: black;
+    }
+  </style>
+</head>
+<body>
+    <button class="back-button" onclick="history.back();">Back</button>
+  <div class="form-container">
+    <h1>Book a Demo</h1>
+    <form action="mailto:nithishi20030710@gmail.com" method="post" enctype="text/plain" id="myForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required min="4">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/" required>
+      </div>
+      <div class="form-group">
+        <label for="number">Contact Number</label>
+        <input type="number" id="number" name="users" placeholder="Enter your contact number" max="10" required>
+      </div>
+      <div class="form-group">
+        <label for="number">Number of users</label>
+        <input type="number" id="number" name="users" placeholder="Enter a number" required>
+      </div>
+      <div class="form-group">
+        <label for="service">How did you hear about us?</label>
+        <select name="hear" required=""><option selected="" disabled="">Select from dropdown</option><option value="Advertising">Advertising</option><option value="Email">Email</option><option value="Exhibition">Exhibition</option><option value="Live Chat" >Live Chat</option><option value="Referral" >Referral</option><option value="Social media" >Social media</option><option value="Solus email via 3rd party" >Solus email via 3rd party</option><option value="Telemarketing" >Telemarketing</option><option value="Trial" >Trial</option><option value="Website Visit" >Website Visit</option></select>
+      </div>
+      <button type="submit">Book Demo</button>
+    </form>
+    <footer>
+      <p>&copy; Copyright 2024 Clinic Name. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <section class="hero">
+  <h2>Book a Demo & Experience the Difference</h2>
+  <p>Schedule a personalized demo to see how our platform can streamline your healthcare experience. We'll walk you through the features and benefits, answer your questions, and show you how we can help you save time and improve efficiency.</p>
+</section>
+</body>
+
+
+
+</html>
